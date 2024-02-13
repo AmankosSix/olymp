@@ -1,0 +1,22 @@
+.videos__detail {
+    &--youtube {
+        height: 550px;
+        margin-top: 60px;
+
+        iframe {
+            width: 90%;
+            height: 100%;        
+            display: block;
+            margin: 0 auto;
+            z-index: 3;
+        }
+    }
+
+    &--blog {
+        margin-bottom: 20px;
+    }
+}
+
+.news__screen.videos__before::before {
+    background: none;
+}

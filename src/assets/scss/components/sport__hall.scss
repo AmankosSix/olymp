@@ -1,0 +1,101 @@
+.sport__hall {
+    background-color: $blue-main;
+    padding-top: 30px;
+    &--grid {
+        // display: grid;
+        // grid-template-columns: repeat(2, 48%);
+        // grid-gap: 30px 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &--card {
+        width: 43%;
+        margin-bottom: 40px;
+        background-color: #fff;
+    }
+
+    &--wrap {
+        height: 270px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &--img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 1s;
+    }
+
+    &--title {
+        font-weight: 400;
+        font-size: 27px;
+        color: #050050;
+        transition: .3s;
+    }
+
+    &--wrapper {
+        padding: 16px;
+    }
+
+    &--subtitle {
+        color: #7f93a2;
+        font-size: 23px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+.sport__hall--wrap:hover .sport__hall--img {
+    transform: scale(1.1);
+}
+
+.sport__hall--wrapper:hover .sport__hall--title {
+    color: red;
+}
+
+.sport__hall__detail {
+    &--region {
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45px;
+        color: #afafaf;
+    }
+
+    &--wrap {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 70px;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    &--description {
+        margin-top: 50px;
+        font-size: 27px;
+        font-weight: 300;
+        color: #050050;
+    }
+
+    &--firstblog {
+        position: relative;
+        background-color: rgb(0, 70, 104);
+    }
+
+    &-- {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &--acc-content table {
+        width: 100%;
+    }
+    &--tabs {
+        margin: 50px 0;
+    }
+}

@@ -1,0 +1,113 @@
+.games {
+  min-height: 100vh;
+  padding-bottom: 150px;
+
+  &__block {
+    padding-top: 250px;
+    background: $blue-main;
+
+    &--title {
+      color: #ffffff;
+      font-size: 100px;
+      line-height: 100px;
+      margin-bottom: 80px;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      margin-top: 40px;
+      background: #ffffff;
+      padding: 15px 4%;
+
+      &--item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #050050;
+        padding-bottom: 20px;
+
+        &__text {
+          color: #050050;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          h2 {
+            font-size: 30px;
+          }
+
+          p {
+            color: #ffcc29;
+            font-size: 16px;
+          }
+
+          &--img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+          }
+        }
+
+        &__type {
+          color: #050050;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .new__list {
+      background: none;
+
+      img {
+        background: #ffffff;
+        padding: 10px;
+      }
+
+      h2 {
+        color: #ffffff;
+      }
+
+      .games__block__list--item {
+        border-color: #ffffff;
+      }
+
+      .games__block__list--item__type {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.fed__wrap {
+  display: flex;
+  justify-content: space-between;
+
+  &--fed__wrap {
+    flex-direction: row-reverse;
+    margin-top: 40px;
+  }
+}
+
+.fed__wrap--block--card {
+  height: 401px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.fed__wrap--block--card--card {
+  height: 500px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

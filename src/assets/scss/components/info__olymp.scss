@@ -1,0 +1,23 @@
+.inf__olymp {
+  &--wrapper {
+    padding-top: 250px;
+    background: $blue-main;
+  }
+
+  &--title {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 100px;
+  }
+
+  &--wrap p img {
+    width: 100%;
+  }
+
+  &--wrap {
+    font-size: 27px;
+    font-weight: 500;
+    color: #050050;
+  }
+}

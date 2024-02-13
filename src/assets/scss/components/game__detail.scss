@@ -1,0 +1,179 @@
+.game__detail {
+  min-height: 70vh;
+
+  &--bg {
+    background: $blue-main;
+  }
+
+  &__main {
+    padding-top: 250px;
+
+    &--title {
+      color: #ffffff;
+      font-size: 100px;
+      line-height: 100px;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    &--type {
+      color: #ffffff;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__content {
+    margin-top: 50px;
+    font-size: 27px;
+    font-weight: 500;
+    color: #050050;
+
+    &--annotation {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #050050;
+      margin-bottom: 50px;
+    }
+    &--accordion {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #050050;
+      margin-bottom: 50px;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__medal-table {
+    margin-bottom: 30px;
+  }
+
+  &__medal-thead {
+    font-size: 22px !important;
+  }
+
+  &__medal-tbody {
+    font-size: 22px !important;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  &__medal--flag {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  &__medal--kazakhstan {
+    background-color: #004668;
+
+    td {
+      color: #fff;
+    }
+  }
+
+  &__medal--flex {
+    display: flex;
+    align-items: center;
+  }
+  &--blog {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--blog--card {
+    width: 400px;
+    height: 400px;
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.medal__img {
+  width: 80px;
+}
+
+.medal--img {
+  width: 20px;
+  height: 20px;
+}
+
+.medal__number {
+  width: 80px;
+}
+
+.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr {
+  transition: 0.3s;
+}
+
+.theme--light.v-data-table
+  > .v-data-table__wrapper
+  > table
+  > tbody
+  > tr:hover:not(.v-data-table__expanded__content):not(
+    .v-data-table__empty-wrapper
+  ) {
+  background-color: #004668 !important;
+
+  td {
+    color: #fff;
+  }
+}
+
+.game__detail__athletes {
+  padding: 80px 0;
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-gap: 30px 30px;
+    margin-top: 40px;
+  }
+
+  &--wrap {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  &--img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+  }
+
+  &--title {
+    font-weight: 400;
+    font-size: 27px;
+    color: #050050;
+    transition: 0.3s;
+  }
+
+  &--wrapper {
+    padding: 20px;
+  }
+
+  &--subtitle {
+    color: #ccd8e1;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  &--card {
+    background-color: #fff;
+  }
+}
+
+.game__detail__athletes--wrap:hover .game__detail__athletes--img {
+  transform: scale(1.1);
+}
+.game__detail__athletes--wrapper:hover .game__detail__athletes--title {
+  color: red;
+}
+.games-detail-title {
+  color: #fff;
+  padding: 80px 0 50px 0;
+}

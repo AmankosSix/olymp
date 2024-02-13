@@ -1,0 +1,19 @@
+.kinds__sports {
+    &--wrap {
+        margin-top: 30px;
+    }
+}
+.v-expansion-panel--active:not(:first-child), .v-expansion-panel--active + .v-expansion-panel {
+    margin-top: 0 !important;
+}
+.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile) > .v-expansion-panel--next-active {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile) > .v-expansion-panel--active {
+    border-radius: 0px !important;
+}
+button.v-expasion-custom.v-expansion-panel-header.v-expansion-panel-header--active {
+    border: 0.5px solid #004668;
+    margin-bottom: 5px;
+}

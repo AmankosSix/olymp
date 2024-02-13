@@ -1,0 +1,84 @@
+.search {
+  min-height: 100vh;
+  &__block {
+    padding-top: 250px;
+    background: $blue-main;
+    &--title {
+      color: #ffffff;
+      font-size: 100px;
+      line-height: 100px;
+      margin-bottom: 80px;
+      text-transform: uppercase;
+    }
+    &__list {
+      margin-top: 40px;
+      background: #ffffff;
+      padding: 15px 4%;
+      &--title {
+        margin-top: 70px;
+        font-size: 2.5rem;
+        color: #050050;
+      }
+      &--item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #050050;
+        padding-bottom: 20px;
+        &--description {
+          display: -webkit-box;
+          -webkit-line-clamp: 2; // количество строк
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        &__text {
+          color: #050050;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          h2 {
+            font-size: 2rem;
+          }
+          &--date {
+            display: flex;
+            align-items: center;
+            color: #ffcc29 !important;
+            font-size: 16px;
+            i {
+              margin-left: 5px;
+              font-size: 16px !important;
+              color: #ffcc29 !important;
+            }
+          }
+          &--img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+          }
+        }
+        &__type {
+          color: #050050;
+          font-size: 20px;
+        }
+      }
+    }
+    .new__list {
+      background: none;
+      img {
+        background: #ffffff;
+        padding: 10px;
+      }
+      h2 {
+        color: #ffffff;
+      }
+      .games__block__list--item {
+        border-color: #ffffff;
+      }
+      .games__block__list--item__type {
+        color: #ffffff;
+      }
+    }
+  }
+}
