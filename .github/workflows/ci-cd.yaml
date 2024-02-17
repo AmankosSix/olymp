@@ -47,7 +47,7 @@ jobs:
           ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker pull ${{ secrets.DOCKER_TEST_IMAGE }}"
           ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker stop olymp-test || true"
           ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker rm olymp-test || true"
-          ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker run --name olymp-test -d -p 8080:80 ${{ secrets.DOCKER_TEST_IMAGE }}"
+          ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker run --name olymp-test -d -p 8081:80 ${{ secrets.DOCKER_TEST_IMAGE }}"
 
   build_prod_image:
     runs-on: ubuntu-latest
@@ -89,4 +89,4 @@ jobs:
           ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker pull ${{ secrets.DOCKER_PROD_IMAGE }}"
           ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker stop olymp || true"
           ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker rm olymp || true"
-          ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker run --name olymp -d -p 3000:80 ${{ secrets.DOCKER_PROD_IMAGE }}"
+          ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "docker run --name olymp -d -p 3001:80 ${{ secrets.DOCKER_PROD_IMAGE }}"
